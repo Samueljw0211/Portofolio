@@ -1,0 +1,46 @@
+:root {
+  color-scheme: dark;
+
+  --color-bg-page: #131313;
+  --color-bg-footer: #0e0e0e;
+  --color-bg-elevated: #1c1b1b;
+  --color-bg-muted: #2a2a2a;
+  --color-border-subtle: #2a2a2a;
+  --color-border-strong: #3c4a46;
+  --color-accent: #57f1db;
+  --color-accent-solid: #2dd4bf;
+  --color-accent-soft: rgba(87, 241, 219, 0.1);
+  --color-accent-border: rgba(87, 241, 219, 0.3);
+  --color-text-primary: #e5e2e1;
+  --color-text-secondary: #bacac5;
+  --color-text-secondary-soft: rgba(186, 202, 197, 0.8);
+  --color-text-status: #c8c6c5;
+  --color-decoration: #3a3a3a;
+  --color-nav-glass: rgba(19, 19, 19, 0.82);
+
+  --font-sans: 'Geist Variable', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 2.5rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 5rem;
+  --space-10: 6rem;
+  --space-11: 8rem;
+
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  --container-wide: 70rem;
+  --container-standard: 65rem;
+  --page-padding: clamp(1.25rem, 4vw, 5rem);
+  --header-height: 4.1875rem;
+  --transition-fast: 180ms ease-out;
+}
