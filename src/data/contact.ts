@@ -1,6 +1,22 @@
+import contactEmailIcon from '../assets/icons/contact-email.svg'
+import contactPhoneIcon from '../assets/icons/contact-phone.svg'
 import emailIcon from '../assets/icons/email.svg'
 import linkedInIcon from '../assets/icons/linkedin.svg'
+import linkedInContactIcon from '../assets/icons/linkedin-contact.svg'
 import phoneIcon from '../assets/icons/phone.svg'
+
+export interface ContactCardData {
+  action: string
+  ariaLabel: string
+  external?: boolean
+  height: number
+  href: string
+  icon: string
+  id: 'email' | 'linkedin' | 'phone'
+  nodeId: string
+  title: string
+  width: number
+}
 
 export interface ContactLink {
   ariaLabel: string
@@ -27,8 +43,8 @@ export const contactDetails = {
     label: 'linkedin.com/in/samuelwinoto',
   },
   phone: {
-    href: 'tel:+6281932235584',
-    label: '081932235584',
+    href: 'tel:+6281392235584',
+    label: '081392235584',
   },
 } as const
 
@@ -59,6 +75,43 @@ export const contactLinks: ContactLink[] = [
     icon: linkedInIcon,
     id: 'linkedin',
     label: 'LinkedIn',
+    width: 25,
+  },
+]
+
+export const contactCards: ContactCardData[] = [
+  {
+    action: 'Contact',
+    ariaLabel: `Call ${contactDetails.phone.label}`,
+    height: 23,
+    href: contactDetails.phone.href,
+    icon: contactPhoneIcon,
+    id: 'phone',
+    nodeId: '16:105',
+    title: 'Phone Number',
+    width: 23,
+  },
+  {
+    action: 'Send E-Mail',
+    ariaLabel: `Email ${contactDetails.email.label}`,
+    height: 20,
+    href: contactDetails.email.href,
+    icon: contactEmailIcon,
+    id: 'email',
+    nodeId: '16:115',
+    title: 'Email',
+    width: 25,
+  },
+  {
+    action: 'View Profile',
+    ariaLabel: 'Open Samuel Jeremy Winoto on LinkedIn',
+    external: true,
+    height: 25,
+    href: contactDetails.linkedin.href,
+    icon: linkedInContactIcon,
+    id: 'linkedin',
+    nodeId: '16:125',
+    title: 'LinkedIn',
     width: 25,
   },
 ]

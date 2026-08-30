@@ -33,7 +33,7 @@ The owner approved the four-route architecture and the responsive and interactio
 
 | Purpose | Display value | Destination |
 | --- | --- | --- |
-| Phone | `081932235584` | `tel:+6281932235584` |
+| Phone | `081392235584` | `tel:+6281392235584` |
 | Email | `samueljw.02@gmail.com` | `mailto:samueljw.02@gmail.com` |
 | LinkedIn | `linkedin.com/in/samuelwinoto` | [LinkedIn profile](https://www.linkedin.com/in/samuelwinoto) |
 | CV | `Download CV` | [Canva CV](https://canva.link/re2w254k51dqueq) |

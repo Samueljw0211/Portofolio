@@ -1,15 +1,22 @@
-import { FoundationPage } from '../components/ui/FoundationPage.tsx'
+import { PageContainer } from '../components/layout/PageContainer.tsx'
+import { ContactCard } from '../components/ui/ContactCard.tsx'
+import { contactCards } from '../data/contact.ts'
+import './ContactPage.css'
 
 export function ContactPage() {
   return (
-    <FoundationPage
-      eyebrow="[ 03 // CONTACT ]"
-      title={
-        <>
-          Here&apos;s how you can <span className="text-accent">contact</span> me.
-        </>
-      }
-      description="Phone, email, and LinkedIn contact cards will be composed here in the next implementation phase."
-    />
+    <main className="contact-page" data-node-id="16:92">
+      <PageContainer className="contact-page__content" width="standard">
+        <h1>
+          Heres how you can <span>contact</span> me
+        </h1>
+
+        <div className="contact-grid" data-node-id="16:104">
+          {contactCards.map((contact) => (
+            <ContactCard contact={contact} key={contact.id} />
+          ))}
+        </div>
+      </PageContainer>
+    </main>
   )
 }
